@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Italiano con Leonardo Theml</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font eleganti da Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Icone da FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Barra di Navigazione -->
+  <header class="navbar">
+    <div class="logo-nav">
+      <i class="fa-solid fa-book-open"></i>
+      <span>Italiano <small>con Leonardo Theml</small></span>
+    </div>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#attivita">Attività</a>
+      <a href="#grammatica">Grammatica</a>
+      <a href="#comprensione">Comprensione</a>
+      <a href="#ascolto">Ascolto</a>
+      <a href="#contatti">Contatti</a>
+      <button class="btn-login" id="loginBtn">Log in Studenti</button>
+    </nav>
+  </header>
+
+  <!-- Sezione Hero / Intestazione Principale -->
+  <section class="hero-section" id="home">
+    <div class="hero-content">
+      <div class="main-logo-icon">
+        <i class="fa-solid fa-book-open"></i>
+      </div>
+      <h1 class="main-title">Italiano</h1>
+      <h2 class="sub-title">con Leonardo Theml</h2>
+      <div class="tricolore-line"></div>
+      <p class="slogan">IMPARA. COMPRENDI. PARLA. VIVI L'ITALIANO.</p>
+    </div>
+  </section>
+
+  <!-- Fascia Tricolore Curva -->
+  <div class="wave-container">
+    <div class="wave wave-green"></div>
+    <div class="wave wave-white"></div>
+    <div class="wave wave-red"></div>
+  </div>
+
+  <!-- Sezione Principale delle Attività Interattive -->
+  <main class="content-section" id="attivita">
+    <h2 class="section-title">Sezioni per Studenti</h2>
+
+    <!-- Griglia dei Moduli Cliccabili -->
+    <div class="cards-grid">
+
+<!-- Nuova Card in evidenza per l'Area Riservata dello Studente -->
+<a href="area-studente.html" class="card card-gold">
+  <div class="card-icon"><i class="fa-solid fa-user-graduate"></i></div>
+  <h3>Il Mio Corso & Appunti</h3>
+  <p>Accedi al tuo libro di testo interattivo, ai tuoi esercizi svolti e al tuo quaderno personale.</p>
+  <span class="btn-card">Entra nella mia area <i class="fa-solid fa-arrow-right"></i></span>
+</a>
+
+      <a href="grammatica.html" class="card card-blue">
+        <div class="card-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+        <h3>Grammatica</h3>
+        <p>Schede interattive, regole ed esercizi con correzione istantanea.</p>
+        <span class="btn-card">Esplora <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+
+      <a href="comprensione.html" class="card card-green">
+        <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
+        <h3>Comprensione Testuale</h3>
+        <p>Letture guidate con vocabolario pop-up ed esercizi di comprensione.</p>
+        <span class="btn-card">Inizia <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="ascolto.html" class="card card-red">
+        <div class="card-icon"><i class="fa-solid fa-headphones"></i></div>
+        <h3>Ascolto & Pronuncia</h3>
+        <p>Tracce audio, dialoghi situazionali e trascrizioni interattive.</p>
+        <span class="btn-card">Ascolta <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="conversazione.html" class="card card-blue">
+        <div class="card-icon"><i class="fa-solid fa-comments"></i></div>
+        <h3>Parliamo Italiano</h3>
+        <p>Frasi utili, dialoghi al museo, hotel, ristorante e contesti reali.</p>
+        <span class="btn-card">Pratica <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="cultura.html" class="card card-green">
+        <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
+        <h3>La Cultura Italiana</h3>
+        <p>Mappe, storia, tradizioni, cinema e pillole culturali.</p>
+        <span class="btn-card">Scopri <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="progetti.html" class="card card-red">
+        <div class="card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <h3>Progetti Speciali</h3>
+        <p>Attività collaborative, sfide di scrittura e compiti interattivi.</p>
+        <span class="btn-card">Partecipa <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Piè di pagina (Footer) -->
+  <footer class="footer">
+    <p>Italiano con Leonardo Theml &copy; Tutti i diritti riservati.</p>
+    <div class="footer-links">
+      <a href="#">Informativa sulla Privacy</a> | 
+      <a href="#">Guida Studenti</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Studente | Italiano con Leonardo Theml</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="area-studente.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- BARRA DI NAVIGAZIONE -->
+  <header class="navbar">
+    <div class="logo-nav">
+      <i class="fa-solid fa-book-open"></i>
+      <span>Italiano <small>con Leonardo Theml</small></span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="area-studente.html" class="active">Il Mio Corso</a>
+      <span class="btn-login"><i class="fa-solid fa-circle-user"></i> Area Riservata</span>
+    </nav>
+  </header>
+
+  <div class="student-dashboard">
+
+    <!-- MENU LATERALE CON UNITA A CASCATA -->
+    <aside class="units-sidebar">
+      <h3>Il Tuo Percorso</h3>
+      <div class="units-accordion">
+
+        <!-- UNITA INTRODUTTIVA -->
+        <div class="accordion-item active">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            <div class="unit-btn-content">
+              <span class="unit-number">0</span>
+              <strong>Unità Introduttiva</strong>
+            </div>
+            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <a href="testi-e-dialoghi-unita0.html" class="sub-link active"><i class="fa-solid fa-comments"></i> Testi e Dialoghi</a>
+            <a href="spiegazioni-unita0.html" class="sub-link"><i class="fa-solid fa-book-bookmark"></i> Spiegazioni & Grammatica</a>
+            <a href="esercizi-unita0.html" class="sub-link"><i class="fa-solid fa-pen-to-square"></i> Esercizi</a>
+          </div>
+        </div>
+
+        <!-- UNITA 1 -->
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            <div class="unit-btn-content">
+              <span class="unit-number">1</span>
+              <strong>Unità 1: Un nuovo inizio</strong>
+            </div>
+            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <a href="testi-e-dialoghi-unita1.html" class="sub-link"><i class="fa-solid fa-comments"></i> Testi e Dialoghi</a>
+            <a href="spiegazioni-unita1.html" class="sub-link"><i class="fa-solid fa-book-bookmark"></i> Spiegazioni & Grammatica</a>
+            <a href="esercizi-unita1.html" class="sub-link"><i class="fa-solid fa-pen-to-square"></i> Esercizi</a>
+          </div>
+        </div>
+
+        <!-- UNITA 2 -->
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            <div class="unit-btn-content">
+              <span class="unit-number">2</span>
+              <strong>Unità 2: Tempo libero</strong>
+            </div>
+            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <a href="testi-e-dialoghi-unita2.html" class="sub-link"><i class="fa-solid fa-comments"></i> Testi e Dialoghi</a>
+            <a href="spiegazioni-unita2.html" class="sub-link"><i class="fa-solid fa-book-bookmark"></i> Spiegazioni & Grammatica</a>
+            <a href="esercizi-unita2.html" class="sub-link"><i class="fa-solid fa-pen-to-square"></i> Esercizi</a>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- AREA CENTRALE DI BENVENUTO / PANORAMICA -->
+    <main class="lesson-workspace">
+      <div class="unit-header">
+        <h1>Benvenuto nella tua Area Personale!</h1>
+        <p>Seleziona un'unità e una sezione dal menu a sinistra per iniziare a studiare.</p>
+      </div>
+
+      <div class="cards-grid">
+        <a href="testi-e-dialoghi-unita0.html" class="card card-green">
+          <div class="card-icon"><i class="fa-solid fa-comments"></i></div>
+          <h3>Inizia dall'Unità Introduttiva</h3>
+          <p>Testi brevi, dialoghi in viaggio ed elementi di fonetica essenziali.</p>
+          <span class="btn-card">Apri Testi e Dialoghi <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="area-studente.js"></script>
+</body>
+</html>

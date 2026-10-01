@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testi e Dialoghi - Unità Introduttiva | Italiano con Leonardo Theml</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="area-studente.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo-nav">
+      <i class="fa-solid fa-book-open"></i>
+      <span>Italiano <small>con Leonardo Theml</small></span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="area-studente.html" class="active">Il Mio Corso</a>
+      <span class="btn-login"><i class="fa-solid fa-circle-user"></i> Area Riservata</span>
+    </nav>
+  </header>
+
+  <div class="student-dashboard">
+
+    <!-- MENU LATERALE (5% SU DESKTOP) -->
+    <aside class="units-sidebar">
+      <h3>Il Tuo Percorso</h3>
+      <div class="units-accordion">
+
+        <!-- UNITA INTRODUTTIVA -->
+        <div class="accordion-item active">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            <div class="unit-btn-content">
+              <span class="unit-number">0</span>
+              <strong>Unità Introduttiva</strong>
+            </div>
+            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+          </button>
+          <div class="accordion-content show">
+            <a href="testi-e-dialoghi-unita0.html" class="sub-link active"><i class="fa-solid fa-comments"></i> Testi e Dialoghi</a>
+            <a href="spiegazioni-unita0.html" class="sub-link"><i class="fa-solid fa-book-bookmark"></i> Spiegazioni</a>
+            <a href="esercizi-unita0.html" class="sub-link"><i class="fa-solid fa-pen-to-square"></i> Esercizi</a>
+          </div>
+        </div>
+
+        <!-- UNITA 1 -->
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            <div class="unit-btn-content">
+              <span class="unit-number">1</span>
+              <strong>Unità 1: Un nuovo inizio</strong>
+            </div>
+            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <a href="testi-e-dialoghi-unita1.html" class="sub-link"><i class="fa-solid fa-comments"></i> Testi e Dialoghi</a>
+            <a href="spiegazioni-unita1.html" class="sub-link"><i class="fa-solid fa-book-bookmark"></i> Spiegazioni</a>
+            <a href="esercizi-unita1.html" class="sub-link"><i class="fa-solid fa-pen-to-square"></i> Esercizi</a>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- AREA CENTRALE CONTENUTO PRINCIPALE (75% SU DESKTOP) -->
+    <main class="lesson-workspace">
+      <div class="unit-header">
+        <h1>Unità Introduttiva: Testi e Dialoghi</h1>
+        <p>Osserva l'uso dei verbi <strong>essere</strong> e <strong>avere</strong> al presente indicativo e fai attenzione alle parole evidenziate per la pronuncia.</p>
+      </div>
+
+      <!-- TESTO 1 -->
+      <div class="intro-card">
+        <div class="intro-card-header">
+          <span class="badge-tag green">Testo 1</span>
+          <h3>Arrivo all'Aeroporto di Roma</h3>
+        </div>
+        <p class="intro-text">
+          Io <strong>sono</strong> Leonardo e <strong>sono</strong> in Italia per lavoro e per piacere. Oggi <strong>sono</strong> all'aeroporto di Roma Fiumicino. <strong>Ho</strong> una valigia grande e uno zaino nero. Il centro della città <strong>è</strong> vicino? Sì, ma io <strong>ho</strong> bisogno di un taxi o di un treno veloce. Qui <strong>c'è</strong> una <mark class="phoneme">collega</mark> di lavoro: lei <strong>è</strong> Giulia. Giulia <strong>ha</strong> la chiave dell'appartamento a Roma.
+        </p>
+      </div>
+
+      <!-- TESTO 2 -->
+      <div class="intro-card">
+        <div class="intro-card-header">
+          <span class="badge-tag red">Testo 2</span>
+          <h3>In Albergo e in Giro per la Città</h3>
+        </div>
+        <p class="intro-text">
+          Noi <strong>siamo</strong> in un piccolo albergo vicino al centro storico. Le camere <strong>sono</strong> pulite e <strong>hanno</strong> la connessione Wi-Fi. Io e Giulia <strong>abbiamo</strong> molta fame! Dove <strong>è</strong> la <mark class="phoneme">chiesa</mark> principale? E dove <strong>è</strong> il museo di arte moderna? Oggi il meteo <strong>è</strong> bello: <strong>c'è</strong> un sole caldo e non <strong>c'è</strong> <mark class="phoneme">nebbia</mark>.
+        </p>
+      </div>
+
+      <!-- DIALOGO 1 -->
+      <div class="dialogue-box">
+        <h4><i class="fa-solid fa-map-location-dot"></i> Dialogo: Chiedere un'Informazione</h4>
+        <div class="chat-box">
+          <div class="chat-bubble left">
+            <strong>Turista:</strong> Scusi! Io <strong>sono</strong> straniero e non <strong>ho</strong> una mappa. Sapete dove <strong>è</strong> il museo?
+          </div>
+          <div class="chat-bubble right">
+            <strong>Passante:</strong> Buongiorno! Il museo <strong>è</strong> vicino a quella <mark class="phoneme">piazza</mark>, dopo la <mark class="phoneme">chiesa</mark>.
+          </div>
+        </div>
+      </div>
+
+      <!-- GUIDA FONETICA BRASILIANI -->
+      <div class="phonetics-guide-box">
+        <h3><i class="fa-solid fa-ear-listen"></i> Dicas de Pronúncia para Brasileiros</h3>
+        <div class="phonetics-grid">
+          <div class="phoneme-card">
+            <strong>CH / GH</strong>
+            <small>Som DURO (K / G)</small>
+            <p><em>Chie-sa</em> (Quiesa), <em>Spaghet-ti</em> (Spaguti).</p>
+          </div>
+          <div class="phoneme-card">
+            <strong>GN</strong>
+            <small>Som de "NH"</small>
+            <p><em>Gnocchi</em> (Nhóqui), <em>Bologna</em> (Bolonha).</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- QUADERNO APPUNTI (20% SU DESKTOP / POPUP SU MOBILE) -->
+    <aside class="notes-sidebar" id="notesSidebar">
+      <div class="notes-header-mobile">
+        <h3><i class="fa-solid fa-note-sticky"></i> Appunti Personali</h3>
+        <button class="btn-close-notes" onclick="toggleMobileNotes()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <p class="notes-help">Annota qui le tue note su questa lezione. Saranno salvate automaticamente.</p>
+      <textarea id="studentNotes" placeholder="Es. Ricordare: 'Ch' in italiano si pronuncia K!"></textarea>
+      <button class="btn-save-notes" onclick="salvaAppunti('unita0_testi')"><i class="fa-solid fa-floppy-disk"></i> Salva Appunti</button>
+      <span id="saveStatus" class="save-status"></span>
+    </aside>
+
+  </div>
+
+  <!-- PULSANTE FLOTTANTE SOLTANTO PER SMARTPHONE E TABLET -->
+  <button class="mobile-notes-toggle" onclick="toggleMobileNotes()">
+    <i class="fa-solid fa-pen-to-square"></i> Appunti
+  </button>
+
+  <script src="area-studente.js"></script>
+</body>
+</html>

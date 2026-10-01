@@ -1,0 +1,463 @@
+/* DASHBOARD LAYOUT CON PROPORZIONI PERSONALIZZATE (5% Menu | 75% Contenuto | 20% Appunti) */
+.student-dashboard {
+  display: grid;
+  grid-template-columns: minmax(180px, 12fr) 68fr 20fr;
+  min-height: calc(100vh - 73px);
+  background-color: #ffffff;
+}
+
+/* 1. SIDEBAR SINISTRA: UNITÀ DI STUDIO (5% approx) */
+.units-sidebar {
+  background-color: #f8fafc;
+  padding: 20px 12px;
+  border-right: 1px solid #e2e8f0;
+  overflow-y: auto;
+}
+
+.units-sidebar h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  color: #0f172a;
+  letter-spacing: 0.5px;
+}
+
+/* MENU A CASCATA (ACCORDION) */
+.units-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.accordion-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.accordion-btn:hover {
+  background-color: #f8fafc;
+}
+
+.unit-btn-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0f172a;
+  text-align: left;
+}
+
+.unit-number {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  min-width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.unit-btn-content strong {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.arrow-icon {
+  font-size: 0.75rem;
+  color: #64748b;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: none;
+  background-color: #f8fafc;
+  border-top: 1px solid #f1f5f9;
+  padding: 6px;
+}
+
+.accordion-content.show {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sub-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #475569;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.sub-link:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+.sub-link.active {
+  background-color: #059669;
+  color: #ffffff;
+}
+
+/* 2. AREA CENTRALE: LEZIONE INTERATTIVA (75% approx) */
+.lesson-workspace {
+  padding: 35px 40px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.unit-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.unit-header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+/* TESTI INTRODUTTIVI */
+.intro-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.intro-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.badge-tag {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-tag.green { background-color: #dcfce7; color: #166534; }
+.badge-tag.red { background-color: #fee2e2; color: #991b1b; }
+.badge-tag.blue { background-color: #e0f2fe; color: #075985; }
+
+.intro-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+mark.phoneme {
+  background-color: #fef08a;
+  color: #854d0e;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* DIALOGHI BOX */
+.dialogue-box {
+  margin-bottom: 25px;
+}
+
+.dialogue-box h4 {
+  font-size: 0.95rem;
+  color: #0f172a;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-bubble {
+  padding: 12px 16px;
+  border-radius: 12px;
+  max-width: 85%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.chat-bubble.left {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  align-self: flex-start;
+  border-bottom-left-radius: 2px;
+}
+
+.chat-bubble.right {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  align-self: flex-end;
+  border-bottom-right-radius: 2px;
+}
+
+/* FONETICA GUIDA */
+.phonetics-guide-box {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.phonetics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.phoneme-card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.phoneme-card strong {
+  display: block;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.phoneme-card small {
+  display: block;
+  color: #059669;
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.phoneme-card p {
+  font-size: 0.82rem;
+  color: #475569;
+}
+
+/* 3. SIDEBAR DESTRA: QUADERNO DEGLI APPUNTI (20% approx) */
+.notes-sidebar {
+  background-color: #f8fafc;
+  padding: 24px 16px;
+  border-left: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.notes-header-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.notes-sidebar h3 {
+  font-family: 'Cinzel', serif;
+  color: #0f172a;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notes-sidebar h3 i {
+  color: #ca8a04;
+}
+
+.notes-help {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+#studentNotes {
+  flex: 1;
+  width: 100%;
+  min-height: 200px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 12px;
+  color: #0f172a;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  resize: vertical;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+#studentNotes:focus {
+  border-color: #ca8a04;
+}
+
+.btn-save-notes {
+  background-color: #ca8a04;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-save-notes:hover {
+  background-color: #a16207;
+}
+
+.save-status {
+  font-size: 0.8rem;
+  color: #059669;
+  font-weight: 600;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* PULSANTE FLOTTANTE E MODALE MOBILE PER APPUNTI */
+.mobile-notes-toggle, .btn-close-notes {
+  display: none;
+}
+
+/* ========================================================= */
+/* ADATTABILITÀ RESPONSIVE (SMARTPHONE E TABLET)             */
+/* ========================================================= */
+
+/* TABLET (Sotto i 992px) */
+@media (max-width: 992px) {
+  .student-dashboard {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .notes-sidebar {
+    display: none; /* Nasconde la colonna fissa appunti nei tablet */
+  }
+
+  .notes-sidebar.active-mobile {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70vh;
+    z-index: 2000;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.2);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-left: none;
+    animation: slideUp 0.3s ease;
+  }
+
+  .mobile-notes-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ca8a04;
+    color: #ffffff;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(202, 138, 4, 0.4);
+    cursor: pointer;
+    z-index: 1500;
+  }
+
+  .btn-close-notes {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #64748b;
+    cursor: pointer;
+  }
+}
+
+/* SMARTPHONE (Sotto i 768px) */
+@media (max-width: 768px) {
+  .student-dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .navbar nav {
+    gap: 12px;
+  }
+
+  .units-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px;
+  }
+
+  .lesson-workspace {
+    padding: 20px 16px;
+  }
+
+  .unit-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .chat-bubble {
+    max-width: 95%;
+  }
+
+  .mobile-notes-toggle {
+    bottom: 16px;
+    right: 16px;
+    padding: 12px 18px;
+  }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
